@@ -1,8 +1,24 @@
 aid: rei-do-pitaco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rei-do-pitaco.png
 name: Rei do Pitaco
-description: Rei do Pitaco is a company surfaced as a portfolio company of bullpen-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Rei do Pitaco is a Brazilian online sports betting, daily fantasy sports, and casino
+  platform founded in 2019 and headquartered in Brazil. The service offers competitive sports odds,
+  live in-play betting, daily fantasy sports contests, and casino games aimed at the Brazilian
+  market. As a regulated iGaming operator its consumer web and mobile properties are geo-restricted
+  outside Brazil (the primary domains return HTTP 451 to non-Brazilian visitors), and the company
+  exposes no public developer API, documentation, or SDK surface. Rei do Pitaco is backed by Bullpen
+  Capital and was added to the API Evangelist network as a portfolio-sourced company profile.
 url: https://raw.githubusercontent.com/api-evangelist/rei-do-pitaco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,15 +28,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sports Betting
+- Fantasy Sports
+- iGaming
+- Casino
+- Gambling
+- Brazil
+- Sports
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/rei-do-pitaco-domain-security.yml
 - type: Website
   url: https://www.reidopitaco.com
